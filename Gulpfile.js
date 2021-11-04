@@ -15,24 +15,24 @@ gulp.task('build_js', function (done) {
                 comments: false
             }
         }))
-        .pipe(gulp.dest('./js/min'));
+        .pipe(gulp.dest('./build/js'));
 
 	done();
 });
 
 //css tasks
 gulp.task('build_css', function (done) {
-    gulp.src('./css/main.less')
+    gulp.src('./less/main.less')
         .pipe(less())
         .pipe(cleanCSS({
             compatibility: 'ie8',
             level: {1: {specialComments: 0}}
         }))
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./build/css'));
 
     done();
 });
 
 gulp.task('watch_styles', function() {
-    gulp.watch('./css/**/*.less', gulp.series('build_css'));
+    gulp.watch('./less/**/*.less', gulp.series('build_css'));
 });
