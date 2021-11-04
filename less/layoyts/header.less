@@ -1,0 +1,80 @@
+.header {
+	padding: 40px 0;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__right-bar {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__search {
+		position: relative;
+
+		&-field {
+			height: 50px;
+			border: 1px solid @main-light;
+			border-radius: 25px;
+			padding: 0 50px 0 20px;
+		}
+
+		&-button {
+			width: 50px;
+			height: 50px;
+			._-icon-bg('../img/icons/navigate/search.svg', @black);
+			background-size: 20px;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+
+	&__lang {
+		display: flex;
+		border: 0;
+		padding: 0;
+		margin-left: 20px;
+
+		&-radio {
+			position: relative;
+			padding: 0;
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+
+			&-input {
+				display: block;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				appearance: none;
+
+				&:checked + .header__lang-radio-item {
+					border-color: @black;
+				}
+			}
+
+			&-item {
+				display: inline-block;
+				border: 3px solid @main-light;
+				border-radius: 4px;
+				text-transform: uppercase;
+				padding: 9px 12px 10px;
+			}
+		}
+	}
+
+	&__login {
+		width: 50px;
+		height: 50px;
+		._-icon-bg-img('../img/icons/user.svg', @black);
+		background-size: 36px;
+		margin-left: 20px;
+	}
+}

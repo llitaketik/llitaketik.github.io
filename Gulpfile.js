@@ -4,7 +4,8 @@ const gulp = require('gulp'),
     less = require('gulp-less'),
     cleanCSS = require('gulp-clean-css'),
     nano = require('gulp-cssnano'),
-    watch = require('gulp-watch');
+    watch = require('gulp-watch'),
+    autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('build_js', function (done) {
     // js
@@ -22,8 +23,10 @@ gulp.task('build_js', function (done) {
 
 //css tasks
 gulp.task('build_css', function (done) {
-    gulp.src('./less/main.less')
+    gulp.src('./less/concat.less')
+        .pipe(concat('main.min.css'))
         .pipe(less())
+        .pipe(autoprefixer('last 10 versions', 'ie 9'))
         .pipe(cleanCSS({
             compatibility: 'ie8',
             level: {1: {specialComments: 0}}

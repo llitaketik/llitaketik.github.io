@@ -6,8 +6,62 @@
 		  content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Привет! Это домашка Веремьёва Романа</title>
+	<link rel="stylesheet" href="build/css/main.min.css">
+	<script src="build/js/main.min.js"></script>
 </head>
 <body>
+	<a class="button button-skip"
+	   href="#main">К основному контенту</a>
 
+	<header class="header">
+		<div class="header__row container">
+			<a class="header__logo"
+			   href="/" aria-label="На главную">
+				<img src="img/logo.png" alt="">
+			</a>
+			<div class="header__right-bar">
+				<form class="header__search"
+					  aria-label="Поиск по сайту" tabindex="0">
+					<input id="search" class="header__search-field"
+						   type="search" aria-label="Что ищем" >
+					<button aria-label="Найти" class="header__search-button"></button>
+				</form>
+				<fieldset class="header__lang"
+						  aria-label="Выбор языка" tabindex="0">
+					<label class="header__lang-radio button"
+						   for="lang-ru" aria-label="Русский">
+						<input id="lang-ru" class="header__lang-radio-input"
+							   type="radio" name="lang-pick" value="rus" checked>
+						<span class="header__lang-radio-item"
+							  aria-hidden="true">RU</span>
+					</label>
+					<label class="header__lang-radio button"
+						   for="lang-eng" aria-label="Английский">
+						<input id="lang-eng" class="header__lang-radio-input"
+							   type="radio" name="lang-pick" value="eng">
+						<span class="header__lang-radio-item "
+							  aria-hidden="true">EN</span>
+					</label>
+				</fieldset>
+				<button class="header__login button"
+					type="button" aria-label="Авторизация" aria-haspopup="true"></button>
+			</div>
+		</div>
+	</header>
+	<!--// header-->
+	
+	<main id="main" class="main" tabindex="-1">
+		<div class="container">
+	
+		</div>
+	</main>
+	<!--// main-->
+	
+	<footer class="footer">
+		<div class="container">
+	
+		</div>
+	</footer>
+	<!--// footer-->
 </body>
 </html>

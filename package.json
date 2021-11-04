@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "gulp": "latest",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "latest",
     "gulp-concat": "latest",
     "gulp-cssnano": "latest",
@@ -20,5 +21,8 @@
     "gulp-uglify-es": "latest",
     "gulp-util": "latest",
     "gulp-watch": "latest"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
