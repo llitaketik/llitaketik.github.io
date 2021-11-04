@@ -1,0 +1,24 @@
+{
+  "name": "a11y_homework",
+  "version": "1.0.0",
+  "description": "llitaketik.github.io",
+  "main": "Gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.nuzhnapomosh.ru:td/takiedela.git"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-less": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglify-es": "latest",
+    "gulp-util": "latest",
+    "gulp-watch": "latest"
+  }
+}
