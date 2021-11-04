@@ -29,14 +29,14 @@
 				<fieldset class="header__lang"
 						  aria-label="Выбор языка" tabindex="0">
 					<label class="header__lang-radio button"
-						   for="lang-ru" aria-label="Русский">
+						   for="lang-ru" aria-label="Русский язык">
 						<input id="lang-ru" class="header__lang-radio-input"
 							   type="radio" name="lang-pick" value="rus" checked>
 						<span class="header__lang-radio-item"
 							  aria-hidden="true">RU</span>
 					</label>
 					<label class="header__lang-radio button"
-						   for="lang-eng" aria-label="Английский">
+						   for="lang-eng" aria-label="Английский язык">
 						<input id="lang-eng" class="header__lang-radio-input"
 							   type="radio" name="lang-pick" value="eng">
 						<span class="header__lang-radio-item "
@@ -50,9 +50,56 @@
 	</header>
 	<!--// header-->
 	
+	<nav class="navigate"
+		 role="navigation" aria-label="Навигация сайта">
+		<ul class="navigate__list container" >
+			<li class="navigate__list-item">
+				<a class="navigate__list-link"
+				   href="#">Музей</a>
+			</li>
+			<li class="navigate__list-item">
+				<a class="navigate__list-link"
+				   href="#">Посетителям</a>
+			</li>
+			<li class="navigate__list-item">
+				<a class="navigate__list-link"
+				   href="#">Выставки и события</a>
+			</li>
+		</ul>
+	</nav>
+	
 	<main id="main" class="main" tabindex="-1">
 		<div class="container">
-	
+			<section>
+				<h1>Выставки и события</h1>
+
+			</section>
+
+			<section>
+				<h2 class="h1">Музей</h2>
+
+			</section>
+
+			<section>
+				<h2 class="h1">Онлайн-трансляции</h2>
+				<div class="iframe-wrap">
+					<iframe class="iframe"
+							width="560" height="315" src="https://www.youtube.com/embed/nqlY2fxaFrw"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="h1">Экскурсии и лекции в прямом эфире</h2>
+				<p>С 1 июля вы можете присоединиться к нашим виртуальным мероприятиям — экскурсиям и лекциям для взрослых
+					и детей, оплатив участие на сайте. Встречи будут проходить в прямом эфире на платформе Zoom;
+					предусмотрен формат живого общения с возможностью задавать вопросы экскурсоводу (лектору). <br>
+					<a href="#">Подробнее</a>.</p>
+				<p>Мы будем благодарны за любое <a href="#">пожертвование</a>. Все поступившие средства будут направлены на организацию
+					онлайн-проектов для наших посетителей.</p>
+			</section>
 		</div>
 	</main>
 	<!--// main-->

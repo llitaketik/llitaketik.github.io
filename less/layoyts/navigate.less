@@ -1,0 +1,22 @@
+.navigate {
+	margin-bottom: 40px;
+
+	&__list {
+		display: flex;
+		list-style: none;
+		padding: 0;
+
+		&-item {
+			&:not(:last-child) {
+				margin-right: 40px;
+			}
+		}
+
+		&-link {
+			color: @black;
+			&:hover {
+				color: @link;
+			}
+		}
+	}
+}
