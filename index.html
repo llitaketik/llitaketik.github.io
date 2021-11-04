@@ -14,7 +14,7 @@
 	   href="#main">К основному контенту</a>
 
 	<header class="header">
-		<div class="header__row container">
+		<div class="container row">
 			<a class="header__logo"
 			   href="/" aria-label="На главную">
 				<img src="img/logo.png" alt="">
@@ -70,17 +70,182 @@
 	
 	<main id="main" class="main" tabindex="-1">
 		<div class="container">
-			<section>
+			<section class="section">
 				<h1>Выставки и события</h1>
-
+				<nav>
+					<ul>
+						<li>
+							<button>Все</button>
+						</li>
+						<li>
+							<button>Сегодня</button>
+						</li>
+						<li>
+							<button>Завтра</button>
+						</li>
+					</ul>
+				</nav>
+				<div class="row row_col-3"
+					 role="list" aria-label="Выставки и события">
+					<div class="col-3"
+						 role="listitem">
+						<div class="card">
+							<img class="card-img"
+								 src="/img/events/Rectangle7.png"
+								 alt="Святослав Рихтер в кругу друзей. Москва — Коктебель">
+							<h3 class="card-title">Святослав Рихтер в кругу друзей. Москва — Коктебель</h3>
+							<h4 class="card-subtitle">Выставка до 20 ноября</h4>
+							<p class="card-text">Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст</p>
+							<a class="card-link"
+							   aria-label="Купить билет выставки: Святослав Рихтер в кругу друзей. Москва — Коктебель"
+							   href="#"><span aria-hidden="true">Купить билет</span></a>
+						</div>
+					</div><!--// col-3-->
+					<div class="col-3"
+						 role="listitem">
+						<div class="card">
+							<img class="card-img"
+								 src="/img/events/Rectangle7(1).png"
+								 alt="Тату">
+							<h3 class="card-title">Тату</h3>
+							<h4 class="card-subtitle">Выставка до 27 сентября</h4>
+							<p class="card-text">Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст</p>
+							<a class="card-link"
+							   aria-label="Купить билет выставки: Тату"
+							   href="#"><span aria-hidden="true">Купить билет</span></a>
+						</div>
+					</div><!--// col-3-->
+					<div class="col-3"
+						 role="listitem">
+						<div class="card">
+							<img class="card-img"
+								 src="/img/events/Rectangle7(2).png"
+								 alt="От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ им. А.С. Пушкина">
+							<h3 class="card-title">От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ им. А.С. Пушкина</h3>
+							<h4 class="card-subtitle">Выставка до 1 ноября</h4>
+							<p class="card-text">Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст</p>
+							<a class="card-link"
+							   aria-label="Купить билет выставки: От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ им. А.С. Пушкина"
+							   href="#"><span aria-hidden="true">Купить билет</span></a>
+						</div>
+					</div><!--// col-3-->
+				</div>
 			</section>
 
-			<section>
+			<section class="section">
 				<h2 class="h1">Музей</h2>
+				<nav>
+					<ul>
+						<li>
+							<button>Здания</button>
+						</li>
+						<li>
+							<button>История</button>
+						</li>
+					</ul>
+				</nav>
+				<div class="row row_col-3"
+					 role="list" aria-label="Здания">
+					<div class="col-3"
+						 role="listitem">
+						<div class="card">
+							<img class="card-img"
+								 src="/img/architect/Rectangle7(3).png"
+								 alt="МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА">
+							<h3 class="card-title">МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА</h3>
+							<p class="card-text">ул. Большая Бронная, 2/6, 16 этаж, кв. 58</p>
+							<a class="card-link"
+							   aria-label="Подробнее о здании: МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА"
+							   href="#"><span aria-hidden="true">Подробнее</span></a>
+						</div>
+					</div><!--// col-3-->
+					<div class="col-3"
+						 role="listitem">
+						<div class="card">
+							<img class="card-img"
+								 src="/img/architect/Rectangle7(4).png"
+								 alt="ЦЭВ «МУСЕЙОН»">
+							<h3 class="card-title">ЦЭВ «МУСЕЙОН»</h3>
+							<p class="card-text">Колымажный пер., 6/2, 3 (вход с Малого Знаменского переулка)</p>
+							<a class="card-link"
+							   aria-label="Подробнее о здании: ЦЭВ «МУСЕЙОН»"
+							   href="#"><span aria-hidden="true">Подробнее</span></a>
+						</div>
+					</div><!--// col-3-->
+					<div class="col-3"
+						 role="listitem">
+						<div class="card">
+							<img class="card-img"
+								 src="/img/architect/Rectangle7(5).png"
+								 alt="УСАДЬБА ЛОПУХИНЫХ">
+							<h3 class="card-title">УСАДЬБА ЛОПУХИНЫХ</h3>
+							<p class="card-text">Малый Знаменский пер., 3/5с4</p>
+							<a class="card-link"
+							   aria-label="Подробнее о здании: УСАДЬБА ЛОПУХИНЫХ"
+							   href="#"><span aria-hidden="true">Подробнее</span></a>
+						</div>
+					</div><!--// col-3-->
+					<div class="col-3"
+						 role="listitem">
+						<div class="card">
+							<img class="card-img"
+								 src="/img/architect/Rectangle7(6).png"
+								 alt="УЧЕБНЫЙ МУЗЕЙ">
+							<h3 class="card-title">УЧЕБНЫЙ МУЗЕЙ</h3>
+							<p class="card-text">ул. Чаянова, 15</p>
+							<a class="card-link"
+							   aria-label="Подробнее о здании: УЧЕБНЫЙ МУЗЕЙ"
+							   href="#"><span aria-hidden="true">Подробнее</span></a>
+						</div>
+					</div><!--// col-3-->
+					<div class="col-3"
+						 role="listitem">
+						<div class="card">
+							<img class="card-img"
+								 src="/img/architect/Rectangle7(7).png"
+								 alt="ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ">
+							<h3 class="card-title">ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ</h3>
+							<p class="card-text">ул. Волхонка, 10</p>
+							<a class="card-link"
+							   aria-label="Подробнее о здании: ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ"
+							   href="#"><span aria-hidden="true">Подробнее</span></a>
+						</div>
+					</div><!--// col-3-->
+					<div class="col-3"
+						 role="listitem">
+						<div class="card">
+							<img class="card-img"
+								 src="/img/architect/Rectangle7(8).png"
+								 alt="ГАЛЕРЕЯ">
+							<h3 class="card-title">ГАЛЕРЕЯ</h3>
+							<p class="card-text">ул. Волхонка, 14</p>
+							<a class="card-link"
+							   aria-label="Подробнее о здании: ГАЛЕРЕЯ"
+							   href="#"><span aria-hidden="true">Подробнее</span></a>
+						</div>
+					</div><!--// col-3-->
+				</div>
 
+				<div class="is-hidden">
+					<p>Государственный музей изобразительных искусств имени А.С. Пушкина – одно из крупнейших в&nbsp;России
+						художественных собраний зарубежного искусства с древнейших времен до наших дней.</p>
+					<p>В современной экспозиции представлены обширная учебная коллекция тонированных гипсовых слепков с
+						произведений Античности, Средних веков и эпохи Возрождения, а также собрание подлинных
+						произведений живописи, скульптуры, графики и декоративно-прикладного искусства.</p>
+					<p>В залах первого этажа Главного здания представлены: произведения искусства Древнего Египта,
+						Античности, собрание европейской живописи VIII–XVIII веков; два зала – Итальянский и Греческий
+						дворики – занимают слепки. На втором этаже Главного здания в залах размещены слепки произведений
+						искусства Древней Греции, Рима, Средних веков и Возрождения.</p>
+					<p>В начале 2017 года музей определил новое направление своей деятельности – Пушкинский XXI, –
+						ориентированное на современное российское и западное искусство во всех аспектах – выставочном,
+						образовательном и исследовательском. Таким образом, ГМИИ им. А.С. Пушкина представляет собой
+						открытую, интерактивную сцену, демонстрирующую развитие мировой культуры с древности до наших
+						дней, живое, знакомое с детства пространство для получения знаний и общения.</p>
+					<a href="#">Читать далее</a>
+				</div>
 			</section>
 
-			<section>
+			<section class="section">
 				<h2 class="h1">Онлайн-трансляции</h2>
 				<div class="iframe-wrap">
 					<iframe class="iframe"
@@ -91,7 +256,7 @@
 				</div>
 			</section>
 
-			<section>
+			<section class="section">
 				<h2 class="h1">Экскурсии и лекции в прямом эфире</h2>
 				<p>С 1 июля вы можете присоединиться к нашим виртуальным мероприятиям — экскурсиям и лекциям для взрослых
 					и детей, оплатив участие на сайте. Встречи будут проходить в прямом эфире на платформе Zoom;

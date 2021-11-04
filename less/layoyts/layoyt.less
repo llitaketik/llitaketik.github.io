@@ -11,6 +11,29 @@ body {
 	margin: 0 auto;
 }
 
+.section {
+	&:not(:last-child) {
+		margin-bottom: 120px;
+	}
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&_col-3 {
+		margin: 0 0 -50px -50px;
+	}
+}
+
+.col-3 {
+	width: 33.3333%;
+	box-sizing: border-box;
+	padding-left: 50px;
+	margin-bottom: 50px;
+}
+
 h1, .h1 {
 	font-size: 50px;
 	line-height: 60px;
@@ -19,6 +42,9 @@ h1, .h1 {
 
 a {
 	color: @link;
+	&:hover {
+		color: @main;
+	}
 }
 
 button {
