@@ -23,8 +23,9 @@
 				<form class="header__search"
 					  aria-label="Поиск по сайту" tabindex="0">
 					<input id="search" class="header__search-field"
-						   type="search" aria-label="Что ищем" >
-					<button aria-label="Найти" class="header__search-button"></button>
+						   type="search" aria-label="Что ищем" aria-required="true" required>
+					<button class="header__search-button"
+							aria-label="Найти"></button>
 				</form>
 				<fieldset class="header__lang"
 						  aria-label="Выбор языка" tabindex="0">
@@ -51,7 +52,7 @@
 	<!--// header-->
 	
 	<nav class="navigate"
-		 role="navigation" aria-label="Навигация сайта">
+		 aria-label="Навигация сайта">
 		<ul class="navigate__list container" >
 			<li class="navigate__list-item">
 				<a class="navigate__list-link"
@@ -270,8 +271,54 @@
 	<!--// main-->
 	
 	<footer class="footer">
-		<div class="container">
-	
+		<div class="container row">
+			<div class="footer__col">
+				<nav class="footer__menu"
+					 aria-label="Информация">
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item">
+							<a href="#" class="footer__menu-link">Посетителям с ограниченными возможностями</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#" class="footer__menu-link">Билеты и льготы</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#" class="footer__menu-link">Противодействие коррупции</a>
+						</li>
+					</ul>
+				</nav>
+				<h4 class="footer__title">Соц. сети</h4>
+				<ul class="footer__socials"
+					 aria-label="Мы в соцсетях">
+					<li class="footer__socials-item">
+						<a href="#" class="footer__socials-link footer__socials-link_fb"
+						aria-label="Группа в facebook"></a>
+					</li>
+					<li class="footer__socials-item">
+						<a href="#" class="footer__socials-link footer__socials-link_tg"
+						   aria-label="Группа в telegram"></a>
+					</li>
+					<li class="footer__socials-item">
+						<a href="#" class="footer__socials-link footer__socials-link_mail"
+						   aria-label="Группа в mail.ru"></a>
+					</li>
+				</ul>
+			</div><!--// footer__col-->
+
+			<div class="footer__col">
+				<h4 class="footer__title">Подписка на новости</h4>
+				<form aria-label="Подписаться на новости" tabindex="0">
+					<label for="subscribe-email">Укажите Е-mail</label>
+					<input id="subscribe-email"
+						   type="email" placeholder="Е-mail" aria-required="true" required>
+					<label for="subscribe-offer">
+						<input id="subscribe-offer"
+							   type="checkbox" aria-required="true" required>
+						<span>Согласен на обработку персональх данных</span>
+					</label>
+					<button class="button button_violet">Подписаться</button>
+				</form>
+			</div>
 		</div>
 	</footer>
 	<!--// footer-->
