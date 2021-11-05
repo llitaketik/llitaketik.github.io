@@ -22,7 +22,7 @@
 			<div class="header__right-bar">
 				<form class="header__search"
 					  aria-label="Поиск по сайту" tabindex="0">
-					<input id="search" class="header__search-field"
+					<input id="search" class="header__search-field field"
 						   type="search" aria-label="Что ищем" aria-required="true" required>
 					<button class="header__search-button"
 							aria-label="Найти"></button>
@@ -308,13 +308,15 @@
 			<div class="footer__col">
 				<h4 class="footer__title">Подписка на новости</h4>
 				<form aria-label="Подписаться на новости" tabindex="0">
-					<label for="subscribe-email">Укажите Е-mail</label>
-					<input id="subscribe-email"
+					<label class="field-label"
+						   for="subscribe-email">Укажите Е-mail</label>
+					<input id="subscribe-email" class="field"
 						   type="email" placeholder="Е-mail" aria-required="true" required>
-					<label for="subscribe-offer">
-						<input id="subscribe-offer"
+					<label class="checkbox"
+						   for="subscribe-offer">
+						<input id="subscribe-offer" class="checkbox__input"
 							   type="checkbox" aria-required="true" required>
-						<span>Согласен на обработку персональх данных</span>
+						<span class="checkbox__label">Согласен на обработку персональх данных</span>
 					</label>
 					<button class="button button_violet">Подписаться</button>
 				</form>
