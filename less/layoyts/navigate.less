@@ -5,10 +5,16 @@
 		display: flex;
 		list-style: none;
 		padding: 0;
+		@media (max-width: @mobile) {
+			display: block;
+		}
 
 		&-item {
 			&:not(:last-child) {
 				margin-right: 40px;
+				@media (max-width: @mobile) {
+					margin-bottom: 15px;
+				}
 			}
 		}
 

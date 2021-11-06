@@ -1,9 +1,19 @@
 .tabs {
 	&-nav {
 		margin-bottom: 50px;
+		@media (max-width: @mobile) {
+			margin-bottom: 20px;
+		}
 
 		&__button {
 			border: 3px solid @main-light;
+			@media (max-width: @mobile) {
+				display: block;
+				width: 100%;
+				&:not(:last-child) {
+					margin-bottom: 10px;
+				}
+			}
 
 			&[aria-selected="false"] {
 				&:not(:hover) {
@@ -22,10 +32,20 @@
 		border: 0;
 		padding: 0;
 		margin-bottom: 50px;
+		@media (max-width: @mobile) {
+			margin-bottom: 20px;
+		}
 
 		&__button {
 			display: inline-block;
 			position: relative;
+			@media (max-width: @mobile) {
+				display: block;
+				width: 100%;
+				&:not(:last-child) {
+					margin-bottom: 10px;
+				}
+			}
 
 			&-item {
 				display: block;

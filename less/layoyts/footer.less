@@ -4,9 +4,21 @@
 	line-height: 21px;
 	padding: 73px 0 95px;
 	margin-top: 160px;
+	@media (max-width: @mobile) {
+		padding: 50px 0;
+		margin-top: 50px;
+	}
 
 	&__col {
 		width: 50%;
+
+		@media (max-width: @mobile) {
+			width: 100%;
+
+			&:not(:last-child) {
+				margin-bottom: 50px;
+			}
+		}
 	}
 
 	&__title {

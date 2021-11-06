@@ -4,10 +4,15 @@
 	&__right-bar {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	&__search {
 		position: relative;
+		@media (max-width: @mobile) {
+			width: 100%;
+			margin-bottom: 20px;
+		}
 
 		&-field {
 			border-radius: 25px;
@@ -30,6 +35,10 @@
 		border: 0;
 		padding: 0;
 		margin-left: 20px;
+		@media (max-width: @mobile) {
+			margin-left: 0;
+
+		}
 
 		&-radio {
 			min-width: auto;
