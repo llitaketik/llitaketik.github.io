@@ -17,4 +17,42 @@
 			}
 		}
 	}
+
+	&-filter {
+		border: 0;
+		padding: 0;
+		margin-bottom: 50px;
+
+		&__button {
+			display: inline-block;
+			position: relative;
+
+			&-item {
+				display: block;
+				border: 3px solid @main-light;
+				background-color: transparent;
+			}
+
+			&-input {
+				display: block;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				appearance: none;
+
+				&:checked + .tabs-filter__button-item {
+					background-color: @main-light !important;
+				}
+			}
+
+			&:hover {
+				.tabs-filter__button-item {
+					background-color: @main-light-hov;
+				}
+			}
+		}
+	}
 }

@@ -73,23 +73,35 @@
 		<div class="container">
 			<section id="events" class="section">
 				<h1>Выставки и события</h1>
-				<div class="tabs-nav">
-					<button class="tabs-nav__button button"
-							type="button">
-						Все
-					</button>
-					<button class="tabs-nav__button button"
-							type="button">
-						Сегодня
-					</button>
-					<button class="tabs-nav__button button"
-							type="button">
-						Завтра
-					</button>
-				</div>
-				<div class="row row_col-3"
-					 role="list" aria-label="Выставки и события">
-					<div class="col-3"
+				<fieldset class="tabs-filter"
+						  aria-label="Фильтр событий" tabindex="0">
+					<label class="tabs-filter__button"
+						   for="events-all">
+						<input id="events-all" class="tabs-filter__button-input js-events-filter"
+							   aria-controls="events-list" aria-label="Все события"
+							   type="radio" name="events-filter" value="events-all" checked>
+						<span class="tabs-filter__button-item button" aria-hidden="true">Все</span>
+					</label>
+					<label class="tabs-filter__button"
+						   for="event-today">
+						<input id="event-today" class="tabs-filter__button-input js-events-filter"
+							   aria-controls="events-list" aria-label="События сегодня"
+							   type="radio" name="events-filter" value="events-today">
+						<span class="tabs-filter__button-item button">Сегодня</span>
+					</label>
+					<label class="tabs-filter__button"
+						   for="event-tomorrow">
+						<input id="event-tomorrow" class="tabs-filter__button-input js-events-filter"
+							   aria-controls="events-list" aria-label="События завтра"
+							   type="radio" name="events-filter" value="events-tomorrow">
+						<span class="tabs-filter__button-item button">Завтра</span>
+					</label>
+				</fieldset>
+
+				<div id="events-list" class="row row_col-3"
+					 role="list" aria-live="polite" aria-label="Выставки и события">
+					<div class="col-3 js-events-item"
+						 data-time="events-sometime"
 						 role="listitem">
 						<div class="card">
 							<img class="card-img"
@@ -103,7 +115,8 @@
 							   href="#"><span aria-hidden="true">Купить билет</span></a>
 						</div>
 					</div><!--// col-3-->
-					<div class="col-3"
+					<div class="col-3 js-events-item"
+						 data-time="events-today"
 						 role="listitem">
 						<div class="card">
 							<img class="card-img"
@@ -117,7 +130,8 @@
 							   href="#"><span aria-hidden="true">Купить билет</span></a>
 						</div>
 					</div><!--// col-3-->
-					<div class="col-3"
+					<div class="col-3 js-events-item"
+						 data-time="events-tomorrow"
 						 role="listitem">
 						<div class="card">
 							<img class="card-img"
