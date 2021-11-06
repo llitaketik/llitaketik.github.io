@@ -56,36 +56,37 @@
 		<ul class="navigate__list container" >
 			<li class="navigate__list-item">
 				<a class="navigate__list-link"
-				   href="#">Музей</a>
+				   href="#museum">Музей</a>
 			</li>
 			<li class="navigate__list-item">
 				<a class="navigate__list-link"
-				   href="#">Посетителям</a>
+				   href="#visitors">Посетителям</a>
 			</li>
 			<li class="navigate__list-item">
 				<a class="navigate__list-link"
-				   href="#">Выставки и события</a>
+				   href="#events">Выставки и события</a>
 			</li>
 		</ul>
 	</nav>
 	
 	<main id="main" class="main" tabindex="-1">
 		<div class="container">
-			<section class="section">
+			<section id="events" class="section">
 				<h1>Выставки и события</h1>
-				<nav>
-					<ul>
-						<li>
-							<button>Все</button>
-						</li>
-						<li>
-							<button>Сегодня</button>
-						</li>
-						<li>
-							<button>Завтра</button>
-						</li>
-					</ul>
-				</nav>
+				<div class="tabs-nav">
+					<button class="tabs-nav__button button"
+							type="button">
+						Все
+					</button>
+					<button class="tabs-nav__button button"
+							type="button">
+						Сегодня
+					</button>
+					<button class="tabs-nav__button button"
+							type="button">
+						Завтра
+					</button>
+				</div>
 				<div class="row row_col-3"
 					 role="list" aria-label="Выставки и события">
 					<div class="col-3"
@@ -133,18 +134,20 @@
 				</div>
 			</section>
 
-			<section class="section">
+			<section id="museum" class="section">
 				<h2 class="h1">Музей</h2>
 				<div class="tabs">
 					<div class="tabs-nav"
 						 role="tablist" aria-label="Музеи">
 						<button id="buildings" class="tabs-nav__button button"
+								type="button"
 								role="tab"
 								aria-selected="true"
 								aria-controls="buildings-tab">
 							Здания
 						</button>
 						<button id="history" class="tabs-nav__button button"
+								type="button"
 								role="tab"
 								aria-selected="false"
 								aria-controls="history-tab"
@@ -273,7 +276,7 @@
 				</div>
 			</section>
 
-			<section class="section">
+			<section id="visitors" class="section">
 				<h2 class="h1">Экскурсии и лекции в прямом эфире</h2>
 				<p>С 1 июля вы можете присоединиться к нашим виртуальным мероприятиям — экскурсиям и лекциям для взрослых
 					и детей, оплатив участие на сайте. Встречи будут проходить в прямом эфире на платформе Zoom;
