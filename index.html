@@ -44,8 +44,8 @@
 							  aria-hidden="true">EN</span>
 					</label>
 				</fieldset>
-				<button class="header__login button"
-					type="button" aria-label="Авторизация" aria-haspopup="true"></button>
+				<button class="header__login button js-modal-open" data-modal="modal-1"
+					type="button" aria-label="Авторизация"></button>
 			</div>
 		</div>
 	</header>
@@ -358,5 +358,40 @@
 		</div>
 	</footer>
 	<!--// footer-->
+
+	<div class="overlay js-overlay is-hidden"></div>
+
+	<div role="dialog"
+		 id="modal-1"
+		 aria-labelledby="dialog-label"
+		 aria-modal="true"
+		 class="modal is-hidden">
+		<div class="modal-content js-modal-content" tabindex="0">
+			<h2 id="dialog-label" class="h1">
+				Вход
+			</h2>
+			<form>
+				<fieldset>
+					<div class="field-row">
+						<label class="field-label"
+							   for="authorise-login">Логин</label>
+						<input id="authorise-login" class="field"
+							   type="text" placeholder="Логин" aria-required="true" required>
+					</div>
+					<div class="field-row">
+						<label class="field-label"
+							   for="authorise-password">
+							Пароль</label>
+						<input id="authorise-password" class="field"
+							   type="password" placeholder="Пароль" aria-required="true" required>
+					</div>
+				</fieldset>
+				<button class="button button_block">Вход</button>
+			</form>
+			<button class="button modal-close js-modal-close"
+					data-modal="modal-1"
+					aria-label="Закрыть"></button>
+		</div>
+	</div>
 </body>
 </html>
