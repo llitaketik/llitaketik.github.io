@@ -1,0 +1,20 @@
+.tabs {
+	&-nav {
+		margin-bottom: 50px;
+
+		&__button {
+			border: 3px solid @main-light;
+
+			&[aria-selected="false"] {
+				&:not(:hover) {
+					background-color: transparent;
+				}
+			}
+
+			&[aria-selected="true"] {
+				cursor: default;
+				background-color: @main-light;
+			}
+		}
+	}
+}

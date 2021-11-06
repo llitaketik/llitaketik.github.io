@@ -135,114 +135,130 @@
 
 			<section class="section">
 				<h2 class="h1">Музей</h2>
-				<nav>
-					<ul>
-						<li>
-							<button>Здания</button>
-						</li>
-						<li>
-							<button>История</button>
-						</li>
-					</ul>
-				</nav>
-				<div class="row row_col-3"
-					 role="list" aria-label="Здания">
-					<div class="col-3"
-						 role="listitem">
-						<div class="card">
-							<img class="card-img"
-								 src="/img/architect/Rectangle7(3).png"
-								 alt="МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА">
-							<h3 class="card-title">МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА</h3>
-							<p class="card-text">ул. Большая Бронная, 2/6, 16 этаж, кв. 58</p>
-							<a class="card-link button button_violet"
-							   aria-label="Подробнее о здании: МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА"
-							   href="#"><span aria-hidden="true">Подробнее</span></a>
-						</div>
-					</div><!--// col-3-->
-					<div class="col-3"
-						 role="listitem">
-						<div class="card">
-							<img class="card-img"
-								 src="/img/architect/Rectangle7(4).png"
-								 alt="ЦЭВ «МУСЕЙОН»">
-							<h3 class="card-title">ЦЭВ «МУСЕЙОН»</h3>
-							<p class="card-text">Колымажный пер., 6/2, 3 (вход с Малого Знаменского переулка)</p>
-							<a class="card-link button button_violet"
-							   aria-label="Подробнее о здании: ЦЭВ «МУСЕЙОН»"
-							   href="#"><span aria-hidden="true">Подробнее</span></a>
-						</div>
-					</div><!--// col-3-->
-					<div class="col-3"
-						 role="listitem">
-						<div class="card">
-							<img class="card-img"
-								 src="/img/architect/Rectangle7(5).png"
-								 alt="УСАДЬБА ЛОПУХИНЫХ">
-							<h3 class="card-title">УСАДЬБА ЛОПУХИНЫХ</h3>
-							<p class="card-text">Малый Знаменский пер., 3/5с4</p>
-							<a class="card-link button button_violet"
-							   aria-label="Подробнее о здании: УСАДЬБА ЛОПУХИНЫХ"
-							   href="#"><span aria-hidden="true">Подробнее</span></a>
-						</div>
-					</div><!--// col-3-->
-					<div class="col-3"
-						 role="listitem">
-						<div class="card">
-							<img class="card-img"
-								 src="/img/architect/Rectangle7(6).png"
-								 alt="УЧЕБНЫЙ МУЗЕЙ">
-							<h3 class="card-title">УЧЕБНЫЙ МУЗЕЙ</h3>
-							<p class="card-text">ул. Чаянова, 15</p>
-							<a class="card-link button button_violet"
-							   aria-label="Подробнее о здании: УЧЕБНЫЙ МУЗЕЙ"
-							   href="#"><span aria-hidden="true">Подробнее</span></a>
-						</div>
-					</div><!--// col-3-->
-					<div class="col-3"
-						 role="listitem">
-						<div class="card">
-							<img class="card-img"
-								 src="/img/architect/Rectangle7(7).png"
-								 alt="ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ">
-							<h3 class="card-title">ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ</h3>
-							<p class="card-text">ул. Волхонка, 10</p>
-							<a class="card-link button button_violet"
-							   aria-label="Подробнее о здании: ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ"
-							   href="#"><span aria-hidden="true">Подробнее</span></a>
-						</div>
-					</div><!--// col-3-->
-					<div class="col-3"
-						 role="listitem">
-						<div class="card">
-							<img class="card-img"
-								 src="/img/architect/Rectangle7(8).png"
-								 alt="ГАЛЕРЕЯ">
-							<h3 class="card-title">ГАЛЕРЕЯ</h3>
-							<p class="card-text">ул. Волхонка, 14</p>
-							<a class="card-link button button_violet"
-							   aria-label="Подробнее о здании: ГАЛЕРЕЯ"
-							   href="#"><span aria-hidden="true">Подробнее</span></a>
-						</div>
-					</div><!--// col-3-->
-				</div>
+				<div class="tabs">
+					<div class="tabs-nav"
+						 role="tablist" aria-label="Музеи">
+						<button id="buildings" class="tabs-nav__button button"
+								role="tab"
+								aria-selected="true"
+								aria-controls="buildings-tab">
+							Здания
+						</button>
+						<button id="history" class="tabs-nav__button button"
+								role="tab"
+								aria-selected="false"
+								aria-controls="history-tab"
+								tabindex="-1">
+							История
+						</button>
+					</div>
 
-				<div class="is-hidden">
-					<p>Государственный музей изобразительных искусств имени А.С. Пушкина – одно из крупнейших в&nbsp;России
-						художественных собраний зарубежного искусства с древнейших времен до наших дней.</p>
-					<p>В современной экспозиции представлены обширная учебная коллекция тонированных гипсовых слепков с
-						произведений Античности, Средних веков и эпохи Возрождения, а также собрание подлинных
-						произведений живописи, скульптуры, графики и декоративно-прикладного искусства.</p>
-					<p>В залах первого этажа Главного здания представлены: произведения искусства Древнего Египта,
-						Античности, собрание европейской живописи VIII–XVIII веков; два зала – Итальянский и Греческий
-						дворики – занимают слепки. На втором этаже Главного здания в залах размещены слепки произведений
-						искусства Древней Греции, Рима, Средних веков и Возрождения.</p>
-					<p>В начале 2017 года музей определил новое направление своей деятельности – Пушкинский XXI, –
-						ориентированное на современное российское и западное искусство во всех аспектах – выставочном,
-						образовательном и исследовательском. Таким образом, ГМИИ им. А.С. Пушкина представляет собой
-						открытую, интерактивную сцену, демонстрирующую развитие мировой культуры с древности до наших
-						дней, живое, знакомое с детства пространство для получения знаний и общения.</p>
-					<a href="#">Читать далее</a>
+					<div tabindex="0"
+						 role="tabpanel"
+						 id="buildings-tab"
+						 aria-labelledby="buildings">
+						<div class="row row_col-3">
+							<div class="col-3"
+								 role="listitem">
+								<div class="card">
+									<img class="card-img"
+										 src="/img/architect/Rectangle7(3).png"
+										 alt="МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА">
+									<h3 class="card-title">МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА</h3>
+									<p class="card-text">ул. Большая Бронная, 2/6, 16 этаж, кв. 58</p>
+									<a class="card-link button button_violet"
+									   aria-label="Подробнее о здании: МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА"
+									   href="#"><span aria-hidden="true">Подробнее</span></a>
+								</div>
+							</div><!--// col-3-->
+							<div class="col-3"
+								 role="listitem">
+								<div class="card">
+									<img class="card-img"
+										 src="/img/architect/Rectangle7(4).png"
+										 alt="ЦЭВ «МУСЕЙОН»">
+									<h3 class="card-title">ЦЭВ «МУСЕЙОН»</h3>
+									<p class="card-text">Колымажный пер., 6/2, 3 (вход с Малого Знаменского переулка)</p>
+									<a class="card-link button button_violet"
+									   aria-label="Подробнее о здании: ЦЭВ «МУСЕЙОН»"
+									   href="#"><span aria-hidden="true">Подробнее</span></a>
+								</div>
+							</div><!--// col-3-->
+							<div class="col-3"
+								 role="listitem">
+								<div class="card">
+									<img class="card-img"
+										 src="/img/architect/Rectangle7(5).png"
+										 alt="УСАДЬБА ЛОПУХИНЫХ">
+									<h3 class="card-title">УСАДЬБА ЛОПУХИНЫХ</h3>
+									<p class="card-text">Малый Знаменский пер., 3/5с4</p>
+									<a class="card-link button button_violet"
+									   aria-label="Подробнее о здании: УСАДЬБА ЛОПУХИНЫХ"
+									   href="#"><span aria-hidden="true">Подробнее</span></a>
+								</div>
+							</div><!--// col-3-->
+							<div class="col-3"
+								 role="listitem">
+								<div class="card">
+									<img class="card-img"
+										 src="/img/architect/Rectangle7(6).png"
+										 alt="УЧЕБНЫЙ МУЗЕЙ">
+									<h3 class="card-title">УЧЕБНЫЙ МУЗЕЙ</h3>
+									<p class="card-text">ул. Чаянова, 15</p>
+									<a class="card-link button button_violet"
+									   aria-label="Подробнее о здании: УЧЕБНЫЙ МУЗЕЙ"
+									   href="#"><span aria-hidden="true">Подробнее</span></a>
+								</div>
+							</div><!--// col-3-->
+							<div class="col-3"
+								 role="listitem">
+								<div class="card">
+									<img class="card-img"
+										 src="/img/architect/Rectangle7(7).png"
+										 alt="ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ">
+									<h3 class="card-title">ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ</h3>
+									<p class="card-text">ул. Волхонка, 10</p>
+									<a class="card-link button button_violet"
+									   aria-label="Подробнее о здании: ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ"
+									   href="#"><span aria-hidden="true">Подробнее</span></a>
+								</div>
+							</div><!--// col-3-->
+							<div class="col-3"
+								 role="listitem">
+								<div class="card">
+									<img class="card-img"
+										 src="/img/architect/Rectangle7(8).png"
+										 alt="ГАЛЕРЕЯ">
+									<h3 class="card-title">ГАЛЕРЕЯ</h3>
+									<p class="card-text">ул. Волхонка, 14</p>
+									<a class="card-link button button_violet"
+									   aria-label="Подробнее о здании: ГАЛЕРЕЯ"
+									   href="#"><span aria-hidden="true">Подробнее</span></a>
+								</div>
+							</div><!--// col-3-->
+						</div>
+					</div>
+
+					<div tabindex="0"
+						 role="tabpanel"
+						 id="history-tab"
+						 aria-labelledby="history" hidden="hidden">
+						<p>Государственный музей изобразительных искусств имени А.С. Пушкина – одно из крупнейших в&nbsp;России
+							художественных собраний зарубежного искусства с древнейших времен до наших дней.</p>
+						<p>В современной экспозиции представлены обширная учебная коллекция тонированных гипсовых слепков с
+							произведений Античности, Средних веков и эпохи Возрождения, а также собрание подлинных
+							произведений живописи, скульптуры, графики и декоративно-прикладного искусства.</p>
+						<p>В залах первого этажа Главного здания представлены: произведения искусства Древнего Египта,
+							Античности, собрание европейской живописи VIII–XVIII веков; два зала – Итальянский и Греческий
+							дворики – занимают слепки. На втором этаже Главного здания в залах размещены слепки произведений
+							искусства Древней Греции, Рима, Средних веков и Возрождения.</p>
+						<p>В начале 2017 года музей определил новое направление своей деятельности – Пушкинский XXI, –
+							ориентированное на современное российское и западное искусство во всех аспектах – выставочном,
+							образовательном и исследовательском. Таким образом, ГМИИ им. А.С. Пушкина представляет собой
+							открытую, интерактивную сцену, демонстрирующую развитие мировой культуры с древности до наших
+							дней, живое, знакомое с детства пространство для получения знаний и общения.</p>
+						<a href="#">Читать далее</a>
+					</div>
 				</div>
 			</section>
 
