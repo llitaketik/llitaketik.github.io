@@ -73,7 +73,7 @@ ul, ol {
 h1, .h1 {
 	font-size: 50px;
 	line-height: 60px;
-	margin-bottom: 40px;
+	margin: 0 0 40px;
 
 	@media (max-width: @mobile) {
 		font-size: 35px;
@@ -150,14 +150,23 @@ button {
 }
 
 .modal {
+	width: 900px;
+	min-height: auto;
 	background-color: @white;
 	position: absolute;
 	top: 2rem;
 	left: 50vw;
 	transform: translateX(-50%);
-	min-width: calc(640px - (15px * 2));
-	min-height: auto;
 	padding: 70px 150px;
+	box-sizing: border-box;
+	@media (max-width: @tablet) {
+		width: 700px;
+		padding: 50px;
+	}
+	@media (max-width: @tablet) {
+		width: 90%;
+		padding: 15px;
+	}
 
 	&-close {
 		width: 50px;
